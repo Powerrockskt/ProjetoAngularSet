@@ -1,0 +1,30 @@
+mat-card{
+    border: solid 1px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 99%;
+    margin: 5px;
+}
+mat-card-subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    font-family: Roboto,sans-serif;
+    letter-spacing: .0127em;
+    padding: 10px 10px 0;
+}
+mat-card p::before{
+    content: url("/assets/location-pin.svg") / "";
+}
+.button{
+    padding: 0px;
+    text-decoration: none;
+    color: var(--primary-color);
+    margin-top: 10px;
+    align-items: center;
+
+}
+
+

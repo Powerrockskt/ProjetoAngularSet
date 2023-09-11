@@ -1,0 +1,16 @@
+<section class="results">
+  <div *ngFor="let property of properties">
+    <section class="listing">
+      <img class="listing-photo" [src]="property.cover_photo.url" />
+      <h2 class="listing-heading">{{ property.address }}</h2>
+      <p class="listing-location">
+        {{ property.neighborhood }}, {{ property.city }}
+      </p>
+      <a [routerLink]="['/detalhes', property.db_id]">Learn More</a>
+    </section>
+  </div>
+</section>
+  <button *ngIf="cursor" (click)="loadProperties()" [disabled]="isLoading" class="button">
+    {{ isLoading ? 'Carregando...' : 'Show More' }}
+  </button>
+  <div *ngIf="isLoading">Carregando...</div>

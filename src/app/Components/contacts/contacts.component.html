@@ -1,0 +1,21 @@
+<div *ngFor="let contact of contacts">
+  <mat-card>
+    <mat-card-content>
+      <mat-card-title>
+        {{ contact.firstName }} {{ contact.lastName }} ({{ contact.email }})
+      </mat-card-title>
+    <div *ngFor="let property of contact.property">
+      <mat-card-subtitle>
+        <span>{{property.name}}</span>
+      </mat-card-subtitle>
+        <mat-card-content>
+          <p class="teste">
+          <span>{{property.city}}</span>,
+          <span>{{property.state}}</span>
+        </p>
+        </mat-card-content>
+        <div [routerLink]="['/details', property.id]" class="button">Learn More</div>
+    </div>
+    </mat-card-content>
+  </mat-card>
+</div>

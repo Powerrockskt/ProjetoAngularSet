@@ -1,0 +1,36 @@
+.container{
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header{
+  background-color: #e8e7fa;
+  height: auto;
+  padding: 15px;
+  max-width: 100%;
+}
+
+.menu nav a{
+  color: #605DC8;
+  text-decoration: none;
+  padding-right: 50px;
+  font-size: 18px;
+  position: relative;
+}
+.menu nav a::after{
+  content: " ";
+  width:0px;
+  height:4px;
+  background-image:linear-gradient(45deg,#605DC8, #8B89E6);
+  position: absolute;
+  top: 30px;
+  left:0;
+  transition: width 0.5s;
+}
+.menu nav a:hover::after{
+  width: 30px;
+}
+

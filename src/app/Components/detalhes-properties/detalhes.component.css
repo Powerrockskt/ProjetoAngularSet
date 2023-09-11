@@ -1,0 +1,57 @@
+.listing-photo {
+  height: 600px;
+  width: 50%;
+  object-fit: cover;
+  border-radius: 30px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.listing-heading {
+  font-size: 30pt;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding-left: 2%;
+}
+.listing-location::before {
+  content: url('/assets/location-pin.svg') / '';
+}
+
+.listing-location {
+  font-size: 20pt;
+  margin-bottom: 15px;
+  padding-left: 1%;
+}
+.valores li{
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 4px;
+  display: inline-block;
+  width: 15%;
+  margin: 5px;
+  align-items: center;
+}
+.detalhes{
+font-family: 16px Arial, Helvetica, sans-serif;
+color:#E8E8E8;
+text-align: justify;
+text-indent: 20px;
+margin-top: 10px; 
+background-color: #8B89E6;
+border: 4px solid #605DC8; 
+display: inline-block; 
+height: 50%;
+width: 45%; 
+max-width: 45%;
+padding: 10px;
+}
+.listing-description{
+align-items: center;
+margin: 1%;
+}
+body {
+margin: 1%;
+padding: 0;
+font-family: 'Be Vietnam Pro', sans-serif;
+}

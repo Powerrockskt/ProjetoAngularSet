@@ -1,0 +1,27 @@
+<body>
+  <div *ngIf="property ">
+      <img class="listing-photo" [src]="property.cover_photo.url" />
+        <h1 class="listing-heading">{{ property.address }}</h1>
+        <h2 class="listing-location">{{ property.neighborhood }}, {{ property.city }}</h2>  
+          <div class="valores">
+            <li>Valor de locação: {{property.rental_value}}</li>
+            <li> Valor de Venda: {{property.sale_value}}</li>
+          </div>
+        <div class="listing-description">
+          <ul>
+              <li>Quartos: {{property.bedroom}}</li>
+              <li>Banheiros: {{property.bathroom}}</li>
+              <li>Tipo de Propriedade:{{property.property_type}}</li>
+              <li>area:{{property.area}}</li>
+              <li>Suite:{{property.suite}}</li>
+              <li>CEP:{{property.zipcode}}</li>
+          </ul>
+          <div class="detalhes">
+            <p>Descrição: {{property.description}}</p>
+          </div>
+        </div>
+  </div>
+    <div *ngIf="!property">
+      <p>Loading property details...</p>
+    </div>
+</body> 
